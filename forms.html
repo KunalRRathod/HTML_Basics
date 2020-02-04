@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form Example</title>
+        <link rel = "icon" href="D:/abd.jpg" >
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!--blank-->
+        <form target="_self">
+            First Name<br>
+            <input type="text" name = "name" autofocus> <br><br>
+            Last Name<br>
+            <input type="text" name="name" required><br><br>
+            <input type="radio" name="gender" value="male" checked>Male<br>
+            <input type="radio" name="gender" value="female" checked>Female<br>
+            <input type= "submit" value="insert">
+        </form>
+        <form target="_self">
+            <fieldset>
+            City Details<br>
+            <select name="city">
+                <option value="Miami">Miami</option>
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="Toronto">Toronto</option>
+            </select>
+            Hobbies<br>
+            <input type="checkbox" name="hobby" value="cric"> Cricket
+            <input type="checkbox" name="hobby" value="foot"> Football
+            <input type="checkbox" name="hobby" value="bask"> Basketball
+            <br>
+            Password<br>
+            <input type ="password" name="pwd"><br>
+            Select your car:
+            <select name="cars" size="2" multiple>
+                <option value="c1" selected>Koenigsegg Jesko</option>
+                <option value="c2"selected>Lamborghini Aventador</option>
+                <option value="c3"selected>Pagani Huayra</option>
+                <option value="c4"selected>Bugatti Chiron</option>
+                <option value="c5"selected>Hennessey Venom F5</option>
+                <option value="c5"selected>Alfa Romeo 4C Spider</option>
+                <option value="c5"selected>McLaren GT 2020 Concept</option>
+            </select><br><br><br>
+            <textarea name="adr" rows="5" cols="20"></textarea><br>
+            Select Color
+            <input type="color"><br>
+            BirthDate
+            <input type = "date"><br>
+            Enter a date before 1980-01-01:
+            <input type="date" name="bday" max="1979-12-31"><br>
+            Enter a date after 2000-01-01:
+            <input type="date" name="bday" max="2000-01-02"><br>
+            Email: 
+            <input type="email" required multiple><br>
+            Quantity:
+            <input type="number" name="points" min = "0" max="100" step="10" value="30"><br>
+            <label>Your cars List</label>
+            <input list="cars" id="carsInput">
+            <datalist id="cars">
+                <option value="Koenigsegg"/>
+                <option value="Lamborghini"/>
+                <option value="Pagani"/>
+                <option value="Bugatti"/>
+                <option value="Hennessey"/>
+                <option value="Alfa Romeo"/>
+                <option value="McLaren"/>
+            </datalist>
+            <input type="submit" value="Insert"/><br>
+            <input type="reset" value="Reset"><br>
+            <button type="button">Proceed</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
